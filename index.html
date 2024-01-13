@@ -3,43 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
+        
+        <h1>String Reversal</h1>
+        <br>
+        <br>
+        
+        Enter a string:
+        <input type="text" id="str1">
+        
+        <button class="btn" onclick="reversestring()">Reverse</button>
 
-    <h1>String Reversal</h1>
-    
-
-
-    Enter a string:
-    <input type="text" id="str1">
-
-    <button onclick="reversestring()">Reverse</button>
+        <br>
+        <br>
 
     <p id="p1"></p>
-
-    <script>
-
-        function reversestring()
-        {
-
-            let str1 = document.getElementById("str1").value;
-
-            let newString ="";
-
-            for(let i = str1.length - 1; i >= 0; i--)
-            {
-
-                newString += str1[i];
-
-            }
-
-            document.getElementById("p1").innerHTML = `Reversed String: ${newString}`;
-
-
-        }
-    </script>
-
+    
+</div>
+    <script src="js/script.js"></script>
+    
 
 
 </body>
